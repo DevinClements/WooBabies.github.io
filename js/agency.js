@@ -27,16 +27,16 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$("#voogasalad").on("click", function() {
-    $('#voogasalad-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+$("#acmemodal").on("click", function() {
+    $('#acme-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
 
-$("#slogo").on("click", function() {
-    $('#slogo-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+$("#bombmodal").on("click", function() {
+    $('#bomb-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
 
-$("#cellsociety").on("click", function() {
-    $('#cellsociety-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+$("#rentmodal").on("click", function() {
+    $('#rent-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
 
 $("#game").on("click", function() {
