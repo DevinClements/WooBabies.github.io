@@ -1,163 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Devin Clements">
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: Grey;
-}
+    <title>Devin Clements</title>
+    <link rel="icon" href="img/icon.png">
 
-.header h1 {
-  font-size: 50px;
-}
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
 
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,400italic,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
 </head>
-<body>
 
-<div class="header">
-  <h1>Devin J. Clements</h1>
-</div>
+<body id="page-top" class="index">
 
-<div class="topnav">
-  <a href="#">About Me</a>
-  <a href="#">My Education</a>
-  <a href="#">My Projects</a>
-  <a href="#">Follow Me</a>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>My Experience</h2>
-      <h5>Here I AM, Mar 31, 2020</h5>
-      <img src="B4C53C09-CB48-47BE-B617-FAD6EBB3E235.jpeg" alt="Flowers in Chania">
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class= IMG_1988.JPG><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#art">Art</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-<div class="footer">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Hello and Welcome,</div>
+                <div class="intro-heading">I'm Devin Clements </div>
+            </div>
+        </div>
+    </header>
 
-</div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <h3 class="section-subheading text-muted">Who I am and what I'm passionate about.</h3>
+                </div>
+                <div class="about-container">
+                    <ul class="about-list">
+                        <span style="padding-top: -30px">
+                          <li>
+                              <img src="img/about/nasdaq.png"/ style="background-color: #eaedf2">
+                              <p class="about-title">IMS Mainframe Database Administrator</p>
+                              <p class="about-subtitle"><strong>TSYS, A Global Payments Company </strong></p>
+                              <p class="about-subtitle2"><em>July 2018 - Present | Columbus, GA</em></p>
+                              <p class="about-body">I currently work as a Database Administrator where I am responsible for migration of tested/approved software, utilities, and fixes to the production environment. I have developed complex database configurations by creating database objects per specified business requirements and the necessary sandbox environments for testing. </p>
+                          </li>
+                          <li></span>
+                            <img src="img/about/duke.jpg"/>
+                            <p class="about-title">Valdosta State University Alumni</p>
+                            <p class="about-subtitle"><strong>B.S. in Computer Information Systems</strong></p>
+                            <p class="about-subtitle2"><em>Graduated May 2018 | Valdosta, GA</em></p>
+                            <p class="about-body">I graduated from Valdosta State University in 2018 with a degree in Computer Information Systems. At VSU, I had the opportunity to meet incredible friends, attend thrilling crazy football games, and take thought-provoking and challenging courses about various subjects. During my time there, I was able to engage in several unique experiences, each contributing to my current interests and skills.</p>
+                        </li>
+                        <li>
+                            <img src="img/about/dukecs.png"/>
+                            <p class="about-title">Undergraduate Teaching Assistant</p>
+                            <p class="about-subtitle"><strong>Data Structures and Algorithms</strong></p>
+                            <p class="about-subtitle2"><em>Fall 2015 - December 2015 | Durham, NC</em></p>
+                            <p class="about-body">I worked as an Undergraduate Teaching Assistant for Duke's Data Structures and Algorithms course. My duties included leading weekly recitation classes, holding office hours for students needing help with assignments, and grading projects and exams. As a TA, I was able to solidify my knowledge in the course topics through teaching my peers.</p>
+                        </li>
+                        <li>
+                            <img src="img/about/zhuhai.jpg"/>
+                            <p class="about-title">DukeEngage: Zhuhai, China</p>
+                            <p class="about-subtitle"><strong>Student Representative</strong></p>
+                            <p class="about-subtitle2"><em>Summer 2015| Zhuhai, CN</em></p>
+                            <p class="about-body">In the summer of 2015, I traveled to Zhuhai, China as part of a DukeEngage program with a goal to promote the arts to middle school students. I spent 8 weeks at No. 9 Middle School, teaching English and pop dance classes to over 200 students. Working in a team of 16, we concluded our experience by throwing a sentimental showcase exhibiting the students from each arts class.</p>
+                        </li>
+                        <li>
+                            <img src="img/about/dcd.jpg"/>
+                            <p class="about-title">Duke Chinese Dance</p>
+                            <p class="about-subtitle"><strong>Publicity Chair &amp; Committee</strong></p>
+                            <p class="about-subtitle2"><em>Fall 2013 - May 2017 | Durham, NC</em></p>
+                            <p class="about-body">Throughout college, I was involved with Duke Chinese Dance, a dance group that celebrates Chinese-style movements. I worked as part of the Publicity Committee and was in charge of managing social media and promoting events through digital mediums. Through this experience, I gained important experience in working with photography and graphic design, each now an interest of mine.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Section -->
+    <section id="art" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-13 text-center">
+                    <h2 class="section-heading">Capturing the Moment</h2>
+                    <h3 class="section-subheading text-muted">Celebrating the memories of special occasions and the everyday.</h3>
+                </div>
+                <div class="col-lg-10">
+                    <ul>
+                        <li class="art-item">
+                          <a href="img/art/jenny2.jpg" data-lightbox="art-img"><img src="img/art-cropped/jenny2.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/christmas.jpg" data-lightbox="art-img"><img src="img/art-cropped/christmas.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/azure2.jpg" data-lightbox="art-img"><img src="img/art-cropped/azure2.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/dance.jpg" data-lightbox="art-img"><img src="img/art-cropped/dance.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/sky.jpg" data-lightbox="art-img"><img src="img/art-cropped/sky.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/miami3.jpg" data-lightbox="art-img"><img src="img/art-cropped/miami3.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/miami1.jpg" data-lightbox="art-img"><img src="img/art-cropped/miami1.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/tree.jpg" data-lightbox="art-img"><img src="img/art-cropped/tree.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/azure1.jpg" data-lightbox="art-img"><img src="img/art-cropped/azure1.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/fair.jpg" data-lightbox="art-img"><img src="img/art-cropped/fair.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/parents.jpg" data-lightbox="art-img"><img src="img/art-cropped/parents.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/window.jpg" data-lightbox="art-img"><img src="img/art-cropped/window.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/jenny1.jpg" data-lightbox="art-img"><img src="img/art-cropped/jenny1.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/miami2.jpg" data-lightbox="art-img"><img src="img/art-cropped/miami2.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/chapel.jpg" data-lightbox="art-img"><img src="img/art-cropped/chapel.jpg" alt=""/></a>
+                        </li>
+                        <li class="art-item">
+                          <a href="img/art/football.jpg" data-lightbox="art-img"><img src="img/art-cropped/football.jpg" alt=""/></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Learning by Doing</h2>
+                    <h3 class="section-subheading text-muted">Below are some of the projects I have taken on. Click on them to learn more.</h3>
+                </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="projects-list">
+                <ul>
+                  <li class="projects-item">
+                    <a class="thumbnail" href="#" id="website" data-toggle="modal" data-target="#websiteModal">
+                      <img id="imageresource" src="img/projects-cropped/website-vue.jpg">
+                    </a>
+                    <p class="project-name">Personal Website (Vue)</p>
+                  </li>
+                    <li class="projects-item">
+                      <a class="thumbnail" href="#" id="glenna" data-toggle="modal" data-target="#glennaModal">
+                        <img id="imageresource" src="img/projects-cropped/glenna.jpg">
+                      </a>
+                      <p class="project-name">Glenna</p>
+                    </li>
+                    <li class="projects-item">
+                      <a class="thumbnail" href="#" id="voogasalad" data-toggle="modal" data-target="#voogasaladModal">
+                        <img id="imageresource" src="img/projects-cropped/voogasalad.jpg">
+                      </a>
+                      <p class="project-name">VOOGASalad</p>
+                    </li>
+                    <li class="projects-item">
+                      <a class="thumbnail" href="#" id="slogo" data-toggle="modal" data-target="#slogoModal">
+                        <img id="imageresource" src="img/projects-cropped/slogo.jpg">
+                      </a>
+                      <p class="project-name">SLogo</p>
+                    </li>
+                    <li class="projects-item">
+                      <a class="thumbnail" href="#" id="cellsociety" data-toggle="modal" data-target="#cellsocietyModal">
+                        <img id="imageresource" src="img/projects-cropped/cellsociety.jpg">
+                      </a>
+                      <p class="project-name">SLogo</p>
+                    </li>
+                    <li class="projects-item">
+                      <a class="thumbnail" href="#" id="game" data-toggle="modal" data-target="#gameModal">
+                        <img id="imageresource" src="img/projects-cropped/game.jpg">
+                      </a>
+                      <p class="project-name">Under the Sea</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Modal Content-->
+    <div class="modal fade" id="glennaModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">Glenna</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 30%; height: 30%" src="img/projects-cropped/glenna.jpg"/>
+                <p>Glenna is my first iOS app that I created in a team of three. It functions as a location-based virtual bulletin board, using the GoogleMaps API to allow users to post, edit, delete and subscribe to events
+                  and alerts posted by nearby users. The app also utilizes a simple authentication system for log-in and user creation, as well as the ability to filter, favorite, and sort events.
+                <p>Built using Swift/Xcode, Node.js, and Heroku.</p>
+                <p>Source code can be found <a target="_blank" href="https://github.com/dx14/Glenna">here</a>.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="websiteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">Personal Website (Vue)</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 60%; height: 60%" src="img/projects/website-vue.png"/>
+                <p>I created this mini personal website as a way to learn the Javascript framework VueJS, as well as how to deploy static website hosting through Amazon Web Services' Simple Storage Service (S3).
+                  Creating this webpage from scratch gave me the opportunity me to think creatively, and I chose to use a minimalistic design while still providing relevant professional information.</p>
+                <p>Built using VueJS, HTML/CSS, Bootstrap Vue, and AWS S3.</p>
+                <p>Website can be viewed <a target="_blank" href="http://dennisxu-website-vue.s3-website-us-east-1.amazonaws.com">here</a>.</p>
+                <p>Source code can be found <a target="_blank" href="https://github.com/dx14/vue-website">here</a>.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="voogasaladModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">VOOGASalad</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 60%; height: 60%" src="img/projects/voogasalad-player.png"/>
+                <p>VOOGASalad is an acronym for "Video Object Oriented Game Architecture Salad." This project is based off Game Salad, a game creator and engine that allows users to create a game from scratch and play it. I worked with a team of 10 others in creating our own turret-defense genre game player, engine, and editor. I worked on the game's authoring environment, which allowed players to create and customize the elements of their game, including units and their stats, the game board, and game levels, and also save and load existing games. Combined with the game player and engine, our program allowed for the making of various types of turret defense games.
+                <p>Built using Java, JavaFX, and XML.</p>
+                <p>Source code can be found <a target="_blank" href="https://github.com/dx14/VOOGASalad">here</a>.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="slogoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">SLogo</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 70%; height: 70%" src="img/projects/slogo2.png"/>
+                <p>SLogo is a Simple Logo integrated development environment I programmed in a team of 4. The program can evaluate user inputted expressions in multiple languages and display the output via a "turtle" on the visual graphical user interface. I worked with a partner to develop the internal parser, which can evaluate simple expressions, loops, and user defined commands and variables. </p>
+                <p>Built using Java and JavaFX. </p>
+                <p>Source can be found <a target="_blank" href="https://github.com/dx14/SLogo">here</a>. </p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cellsocietyModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">Cell Society</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 50%; height: 50%" src="img/projects/cellsociety.png"/>
+                <p>Cell Society is a simulator I developed in a team of 3 that is able to visualize the transitions of gridded cellular automata. Cellular automata are grids of colored cells that change behavior and properties depending on the state of its neighboring cells. Our simulator is able to mimic relationships such as segregation, predator-prey, and the spreading of fire.</p>
+                <p>Built using Java, JavaFX, and XML.</p>
+                <p>Source code can be found <a target="_blank" href="https://github.com/dx14/Cell-Society">here</a>.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">Under the Sea</h4>
+              </div>
+              <div class="modal-body">
+                <img style="width: 70%; height: 70%" src="img/projects/game-battle.png"/>
+                <p>Under the Sea is the first program I developed that includes front-end programming. It is a single-player turn-based strategy game that allows for simple open world exploration and battle phases. The game utilizes non-playable characters as enemies and random number generators to enhance the unpredictability of each playthrough.</p>
+                <p>Built using Java and JavaFX.</p>
+                <p>Source code can be found <a target="_blank" href="https://github.com/dx14/Under-The-Sea">here</a>.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Let's get in touch</h2>
+                    <h3 class="section-subheading text-muted">I'd love to hear from you!</h3>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="social-buttons">
+                        <li>
+                          <a href="mailto:djc282001@ymail.com"><i class="fa fa-envelope"></span></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/devin.clements1" target="_blank"><i class="fa fa-facebook-square"></span></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.github.com/DevinClements" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/devinjclements/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.flickr.com/people/124838172@N06/" target="_blank"><i class="fa fa-flickr"></span></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Dennis Xu</span>
+                </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Animate navigation bar items when scrolling -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
 
 </body>
+
 </html>
