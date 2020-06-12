@@ -2,7 +2,7 @@ body {overflow-x: hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Ar
 
 .text-muted {color: #777}
 
-.text-primary {color: red}
+.text-primary {color: ##0066cc}
 
 p {font-size: 14px;line-height:1.75}
 
@@ -17,8 +17,7 @@ a {color: #0066cc}
 h1,h2,h3,h4,h5,h6 {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform: uppercase;
-	font-weight: 700
-	color: red; 	
+	font-weight: 700	
  }
 
 .img-centered {margin: 0 auto}
