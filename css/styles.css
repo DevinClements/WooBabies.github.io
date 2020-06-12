@@ -150,6 +150,7 @@ section {padding: 100px 0}
 .about-container {
 	width: 100%;
 	margin: auto;
+	background-color: grey;
 }
 
 .about-list {
