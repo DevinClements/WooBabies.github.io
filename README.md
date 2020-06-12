@@ -1,2 +1,2 @@
 # DevinClements.github.io
-personal website
+personal website for Devin Clements 
